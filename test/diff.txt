@@ -1,0 +1,43 @@
+  #zm domain
+  zm.domain = http://zm.gaiay.net.cn
+  
+  zm.rpc.url = http://zm.gaiay.net.cn/api
+  
+  #dingdan pai url
+  zm_dingdan.rpc.url=http://zm.gaiay.net.cn/api
+  
+  community.rpc.url = http://zm.gaiay.net.cn/api
+  solr.rpc.url = http://zm.gaiay.net.cn/api
+  
+  zhangxin.rpc.url=http://zm.gaiay.net.cn
+  
+  #\u4e03\u725b\u56de\u8c03
+  qiniu.notfiy.url = http://liujiangtao.gaiay.net.cn/api/zm/w/live/status/qiniu-notify
+  
+  # pay checkin keys
+  pay.appKey=56b6b9150d5afcb40-8000
+  
+  # after paid call back api
+  paid.callback.url=http://zm.gaiay.net.cn
+- paid.callback.api=/api/w/mall/order/pay-complete
+?                         -----
++ paid.callback.api=/api/zm/w/order/pay-complete
+?                        +++
+  
+  #\u76f4\u64ad\u56de\u653e\u6587\u4ef6\u62fc\u63a5\u7684\u6587\u4ef6\u5904\u7406\u4e34\u65f6\u5b58\u653e\u5730\u5740
+  #live.back.tmp = /webapps/zm.gaiay.net.cn-shequn/www/tmp/
+- live.back.tmp = /webapps/zm.gaiay.net.cn-live/tmp/
++ live.back.tmp = d:\\liveinfo\\
+  
+  office.rpc.url=http://zm.gaiay.net.cn/api
+  
+  taocan.rpc.url=http://zm.gaiay.net.cn
+  
+  appverion.570 = 570
+  
+  #liujt 2016-05-16 \u6dfb\u52a0\u5c01\u9762\u4e0a\u4f20\u5230gcs\u7684\u53c2\u6570\u914d\u7f6e
+  gcs.api=http://gcsnode.gaiay.net.cn/api/upload/
+  gcs.clientId=aedcc0e204ad43b4a9b1fb195cbd9971
+- gcs.domain=zm.gaiay.net.cn+ gcs.domain=zm.gaiay.net.cn
+?                           +
++ 	
