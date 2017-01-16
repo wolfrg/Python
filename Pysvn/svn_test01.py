@@ -28,7 +28,7 @@ lines  = open("E:\\GitSVN\\notdelete.txt","r").readlines()
 #使用for循环把替换后的内容写入一个新文件
 fp = open("E:\\GitSVN\\delete.txt","w")
 for s  in lines:
-    fp.write(re.sub('!|\d| ','',s))  #把！符号、数字和空格替换掉    
+    fp.write(re.sub('!|\d| ','',s,20))  #把！符号、数字和空格替换掉    
 fp.close()    #关闭文件
 
 #第二步操作替换好的文件

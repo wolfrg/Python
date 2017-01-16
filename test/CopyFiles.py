@@ -20,11 +20,29 @@ def deleteFile(dirPath):
             deleteFile(filePath)
             os.rmdir(filePath)
         print("删除成功")
+   
+#调用删除函数        
+Alpha_lib_path = "E:\\update-work\\zhangmen\\zhangmen-reader\\Alpha\\trunk\\WEB-INF\\lib"
+maven_lib_path = "E:\\update-maven\\workspace\\zhangmen_reader\\zm-reader-service\\target\\zm-reader-service-0.0.1\\WEB-INF\\lib"
+if os.path.exists(maven_lib_path and Alpha_lib_path ):
+    deleteFile(maven_lib_path)
+    deleteFile(Alpha_lib_path)
+    
+elif  not os.path.exists(maven_lib_path):
+    if os.path.exists(Alpha_lib_path):
+        deleteFile(Alpha_lib_path)
+    
+    
         
-#调用删除函数
-#deleteFile("E:\\Temp\\2")
+        
+        
+    
+    
+    
 
-#判断文件类型的函数
+
+
+
 
 
 #复制的函数
