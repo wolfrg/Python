@@ -10,7 +10,7 @@ import shutil
 
 
 def deleteFile(dirPath):
-    files = os.listdir(dirPath)
+    files = os.listdir(dirPath)    #listdir函数不会列出子目录的文件
     for f in files:
         filePath = os.path.join(dirPath,f)
         print (filePath)
